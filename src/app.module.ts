@@ -5,6 +5,7 @@ import { PassportModule } from '@nestjs/passport';
 import { FeaturesModule } from './features/features.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { CommentsModule } from './comments/comments.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { AuthModule } from './auth/auth.module';
     FeaturesModule,
     UsersModule,
     AuthModule,
+    CommentsModule,
   ],
 })
 export class AppModule {}

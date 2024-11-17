@@ -1,12 +1,6 @@
 import { Request } from 'express';
-
-export interface UserPayload {
-  id: string;
-  role: string;
-  email: string;
-  name: string;
-}
+import { LoginDto } from '../auth/dto/login.dto';
 
 export interface UserRequest extends Request {
-  user?: UserPayload;
+  user?: LoginDto;
 }

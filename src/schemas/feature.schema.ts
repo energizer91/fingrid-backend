@@ -19,13 +19,7 @@ export class Feature extends Document {
   status: string;
 
   @Prop({ default: 0 })
-  likes: number;
-
-  @Prop({ default: 0 })
   priority: number;
-
-  @Prop({ default: 0 })
-  dislikes: number;
 
   @Prop({ type: Types.ObjectId })
   parent: Types.ObjectId;
